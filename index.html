@@ -6,11 +6,66 @@
    
     <style>
 
+        html {
+            font-size: 10px;
+        }
+
+        nav {
+            position: fixed;
+            min-width: 290px;
+            top: 0px;
+            left: 0px;
+            width: 300px;
+            height: 100%;
+            border-right: solid;
+            border-color: whitesmoke;
+
+        }
+
+        body {
+            background-color:rgb(85, 2, 2);
+            color: whitesmoke;
+            font-family: 'Indie Flower', cursive;
+            font-weight: 100;
+            font-size: 1.8rem;
+        }
+
+        .doggos {
+            height: 300px;
+            width: 300px;
+        }
+
     </style>
    
    
     <title>Coding with Doggos</title>
 </head>
+
+<nav id="nav-bar">
+    <header>HTML with Doggos</header>
+
+    <li><a class="nav-link" 
+        href="#intro">Introduction</a></li>
+
+    <li><a class="nav-link" 
+        href="#origin">Origin</a></li>
+
+    <li><a class="nav-link"
+        href="#types">Types of Doggo</a> </li>
+
+    <li><a class="nav-link" 
+        href="#noises">Doggo Noises</a></li>
+
+    <li><a class="nav-link"
+        href="#sizes">Doggo Sizes</a> </li>
+
+    <li><a class="nav-link"
+        href="#other-terms">Other Doggo Terms</a> </li>
+
+    <li><a class="nav-link"
+        href="resources">Resources</a> </li>
+
+</nav>
 
 <main id="main-doc">
 
@@ -32,7 +87,7 @@
             <p> In 2013 a picture posted by a Japanese Kindergarten teacher
                 of her Shiba Inu named Kabosu turned into an internet sensation.
                 The "mona-lisa"-esque, ambiguious facial expression of the dog
-                seems to be the initial attraction. What it sparked was a global
+                seems to be the initial attraction. It sparked a global
                 meme using comic-sans font and grammatically incorrect English. 
                 Here we will learn how to embed an image in HTML.
             </p>
@@ -59,7 +114,7 @@
 
             <p>After the virility of "Doge Adventure" there was a lag before
                 the dawn of the doggo. Doggo was most likely a term popularized
-                by the popular Instagram account @WeRateDogs, but originally 
+                by the Instagram account @WeRateDogs, but originally 
                 hailes from the land down under. In Australia they like to short
                 form or make up cute nicknames for pretty well everything, and 
                 doggo seems to be part of the vernacular. One internet phrase 
@@ -79,11 +134,11 @@
                 First we will start with an unordered list of doggo terms that 
                 refer to doggos by their general aesthetic and tempermant.
                 <ul>
-                    <li>Doggo</li>
-                    <li>Pupper</li>
-                    <li>Borker</li>
-                    <li>Floof</li>
-                    <li>Woofer</li>
+                    <li>Doggo - your average everyday dog</li>
+                    <li>Pupper - doggo youth, the puppies</li>
+                    <li>Borker - small but loud and proud</li>
+                    <li>Floof - much fur everywhere</li>
+                    <li>Woofer - lorge and loud</li>
                 </ul>
             </p>   
 
@@ -91,10 +146,10 @@
                 refer to specific breeds of doggos.
             
                 <ol>
-                    <li>Goldenboi</li>
-                    <li>Longboi</li>
-                    <li>Cloud</li>
-                    <li>Puggerino</li>
+                    <li>Goldenboi - Golden Retriever</li>
+                    <li>Longboi - Greyhound (or Russian wolfhounds)</li>
+                    <li>Cloud - Samoyed</li>
+                    <li>Puggerino - Pug</li>
                 </ol>
             </p>
     </section>
@@ -122,25 +177,40 @@
             </p>
 
         <h3>Long (or tall, has long body or long legs)</h3>
-            <img src="https://i.redd.it/2m4ggs6wgnz11.jpg" alt="very long dog">
+            <img src="https://i.redd.it/2m4ggs6wgnz11.jpg" 
+            alt="very long dog"
+            class="doggos">
     
         <h3>Thicc (often used in reference to corgos)</h3>
-            <img src="https://ih0.redbubble.net/image.429244167.8293/flat,1000x1000,075,f.jpg" alt="thick cogie">
+            <img src="https://ih0.redbubble.net/image.429244167.8293/flat,1000x1000,075,f.jpg" 
+            alt="thick corgie"
+            class="doggos">
 
         <h3>Smol (and in this case pupper as well)</h3>
-            <img src="https://i.kym-cdn.com/photos/images/original/001/304/422/f82.jpg" alt="very small puppy sleeping on a banana">
+            <img src="https://i.kym-cdn.com/photos/images/original/001/304/422/f82.jpg" 
+            alt="very small puppy sleeping on a banana"
+            class="doggos">
 
         <h3>Lorge (unlike thicc or chonky this doggo is very lorge by nature)</h3>
-            <img src="https://meme.xyz/uploads/posts/t/l-29040-big-doggo.jpg" alt="very big dog">
+            <img src="https://meme.xyz/uploads/posts/t/l-29040-big-doggo.jpg" 
+            alt="very big dog"
+            class="doggos">
 
         <h3>Chonky (similar to thicc, but less curvacious and more... chonk)</h3>
-            <img src="https://i.redd.it/pfamotddp7941.jpg" alt="very fat dog">
+            <img src="https://i.redd.it/pfamotddp7941.jpg" 
+            alt="very fat dog"
+            class="doggos">
     </section>
 
     <section class="main-section" id="other-terms">
         <h1>Other Doggo Terms</h1>
-            <p> boop, snoot, blop/blep, mlem
-                ...
+            <p> 
+                <ul>
+                    <li>Boop: "Affectionately poking someone(doggo) on the nose, often accompanied by saying "Boop!"</li>
+                    <li>Snoot: "A nose or other boopable extremety, generally exaggerated to excentuate smolness."</li>
+                    <li>Blop/blep: "When a dog forgets to put its tongue back in its mouth, causing the tip to stick out. Same thing as blep in cats."</li>
+                    <li>Mlem: "(adjective) the sound affect it makes when a tongue exits and re-enters the mouth."</li>
+                </ul>
             </p>
     </section>
 
@@ -151,6 +221,7 @@
             https://www.youtube.com/watch?v=f33VSitUzRE
             https://en.wikipedia.org/wiki/Doge_(meme)
             https://www.wired.com/story/rise-of-doggo/
+            https://www.urbandictionary.com/
 
         </p>
     </section>
