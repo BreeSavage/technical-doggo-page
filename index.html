@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
     <style>
-
-        @font-face {
-          font-family: "Satisfy";
-            src: url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Satisfy&display=swap');
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Satisfy&display=swap');
 
         html {
             font-size: 10px;
             font-family: 'Satisfy', cursive;
+            font-weight: lighter;
+        }
+
+        body {
+            margin: 0px;
         }
 
         nav {
@@ -29,7 +30,7 @@
 
         }
 
-        #nav-bar {
+        #navbar {
             background-color: rgb(129, 39, 39);
             color: rgb(5, 5, 5);
         }
@@ -50,12 +51,20 @@
         nav li a:hover {
             background-color: rgb(146, 103, 103);
         }
-        
+
         header {
             font-size: 2.3rem;
             display:block;
             padding: 20px 10px;
             text-align: center;
+        }
+
+        h1 {
+            margin-top: 0px;
+        }
+
+        .body-header {
+            font-size: 3.0rem;
         }
 
         main {
@@ -65,7 +74,36 @@
             margin-left: 250px;
             padding-left: 20px;
             padding-right: 50px;
-            font-size: 2.0rem;
+            font-size: 2.4rem;
+        }
+
+        @media (max-width: 700px;) {
+            .doggo {
+                max-width: 100%;
+                height: auto;
+            }
+            html {
+                font-size: 7px;
+            }
+            main {
+                padding: 2px 2px;
+            }
+        }
+
+        #coding {
+            font-family:monospace;
+            font-size: 1.6rem;
+        }
+
+        code {
+            display: block;
+            text-align: left;
+            width: 600px;
+            background-color:rgba(255,222,173 ,0.7);
+            padding: 20px 10px;
+            word-wrap: normal;
+            word-break: normal;
+            font-size: 1.8rem;
         }
 
         .doggos {
@@ -73,42 +111,46 @@
             width: 300px;
         }
 
+        #terms {
+            list-style: none;
+        }
+
     </style>
    
    
-    <title>Coding with Doggos</title>
+    <title>HTML Coding with Doggos</title>
 </head>
 
-<nav id="nav-bar">
-    <header><b>HTML with Doggos</b></header>
+<nav id="navbar">
+    <header><b>HTML Coding with Doggos</b></header>
 
     <li><a class="nav-link" 
-        href="#intro">Introduction</a></li>
+        href="#introduction">Introduction</a></li>
 
     <li><a class="nav-link" 
         href="#origin">Origin</a></li>
 
     <li><a class="nav-link"
-        href="#types">Types of Doggo</a> </li>
+        href="#types_of_doggo">Types of Doggo</a> </li>
 
     <li><a class="nav-link" 
-        href="#noises">Doggo Noises</a></li>
+        href="#doggo_noises">Doggo Noises</a></li>
 
     <li><a class="nav-link"
-        href="#sizes">Doggo Sizes</a> </li>
+        href="#doggo_sizes">Doggo Sizes</a> </li>
 
     <li><a class="nav-link"
-        href="#other-terms">Other Doggo Terms</a> </li>
+        href="#other_doggo_terms">Other Doggo Terms</a> </li>
 
     <li><a class="nav-link"
-        href="resources">Resources</a> </li>
+        href="#resources">Resources</a> </li>
 
 </nav>
 
 <main id="main-doc">
 
-    <section class="main-section" id="intro">
-        <h1>Introduction</h1>
+    <section class="main-section" id="introduction">
+        <header class="body-header" id="introduction">Introduction</header>
             <p> This page will take you through some basics of 
                 html coding with the help of some friendly doggos.
                 At the same time, we will learn some basic history and 
@@ -117,20 +159,21 @@
     </section>
     
     <section class="main-section" id="origin">
-        <h1>Origin</h1>
-            <h3><em>Doge to Doggo, the doge that started it all
+        <header class="body-header" id="origin">Origin</header>
+            <h4><em>Doge to Doggo, the doge that started it all
                 and the video that went viral. 
-            </em> </h3>
+            </em> </h4>
 
             <p> In 2013 a picture posted by a Japanese Kindergarten teacher
                 of her Shiba Inu named Kabosu turned into an internet sensation.
                 The "mona-lisa"-esque, ambiguious facial expression of the dog
                 seems to be the initial attraction. It sparked a global
                 meme using comic-sans font and grammatically incorrect English. 
-                Here we will learn how to embed an image in HTML.
             </p>
 
-            <code>img src="URL" alt="describe image"</code>
+            <h4 id="coding">Here we will learn how to embed an image in HTML.</h4>
+
+            <code>&lt;img src="URL" alt="describe image"&gt;</code>
 
             <p id="coding"> Note that images do not need closing tags. It is important to always have 
                 an alt with a short descriptive phrase to explain the image. This will 
@@ -147,13 +190,15 @@
             <p> Some might say that what truly made the doge phenomena <em>take off</em>  
                 (pun intended) was when "Doge Adventure" went viral on YouTube. With
                 2.2 million views, "Doge Adventure" is a cartoon of Kobasu on an 
-                adventure through the atmosphere. Here we will take a look at inserting
-                this video into our index.html using iframe.  A two minute 
-                version of video will follow.
+                adventure through the atmosphere. Video clip below.
             </p>
 
-            <code> iframe src="URL" id="description" height="px value" width="px value" 
-                allowfullscreen /iframe
+            <h4 id="coding">   
+                Here we will take a look at inserting
+                this video into our index.html using iframe.</h4>
+
+            <code> &lt;iframe src="URL" id="description" height="px value" width="px value" 
+                allowfullscreen&gt; &lt;/iframe&gt;
             </code>
 
             <p id="coding">Adding a height and width is not necessary, but may be useful
@@ -177,16 +222,15 @@
             </p>
     </section>
 
-    <section class="main-section" id="types">
-        <h1>Types of Doggo</h1>
+    <section class="main-section" id="types_of_doggo">
+        <header class="body-header" id="types_of_doggo">Types of Doggo</header>
             <p> Since the dawn of doggo, there have been many new words created
                 to describe different types of doggos. There are many, many different 
                 words to describe different sorts and breeds of our four legged friends, but 
                 for the purposes of this page we will stick to the most commonly
-                used terms. We will use these various types of doggo to illustrate
-                how to make lists in HTML. 
+                used terms. 
 
-                First we will start with an unordered list of doggo terms that 
+                Here is a list of doggo terms that 
                 refer to doggos by their general aesthetic and tempermant.
                 <ul>
                     <li>Doggo - your average everyday dog</li>
@@ -197,11 +241,14 @@
                 </ul>
             </p>   
 
-            <code>ul (unoredered list) 
-                li "list item 1" /li 
-                li "list item 2" /li
-                etc.
-                /ul 
+            <h4 id="coding"> We will use this, types of doggo, list to illustrate
+                how to make unordered lists in HTML. </h4>
+
+            <code>&lt;ul&gt; (unoredered list) <br>
+                &lt;li&gt; "list item 1" &lt;/li&gt; <br>
+                &lt;li&gt; "list item 2" &lt;/li&gt; <br>
+                etc. <br>
+                &lt;/ul&gt; 
             </code>
 
             <p id="coding">It is important to note that each individual list item requires an
@@ -209,7 +256,7 @@
                 as the entire unordered list needing opening and closing tags to make it a whole. 
             </p>
 
-            <p> Next we will look at an ordered list of doggo terms that typically 
+            <p> Next we will look at a list of doggo terms that typically 
                 refer to specific breeds of doggos.
             
                 <ol>
@@ -220,11 +267,14 @@
                 </ol>
             </p>
 
-            <code>ol (ordered list)
-                li "list item 1" /li 
-                li "list item 2" /li
-                etc.
-                /ol 
+            <h4 id="coding">Here we have an ordered list. This is 
+                how to make an ordered list in HTML.</h4>
+
+            <code>&lt;ol&gt; (ordered list) <br>
+                &lt;li&gt; "list item 1" &lt;/li&gt; <br>
+                &lt;li&gt; "list item 2" &lt;/li&gt; <br>
+                etc. <br>
+                &lt;/ol&gt; 
             </code>
             <p id="coding">An ordered list functions exactly the same as an unordered list
                 with the exception that each list item is numbered. In an ordered list you 
@@ -233,16 +283,17 @@
                 other than one.
             </p>
 
-            <code> ol reversed 
-                li value=10 "list item 10" /li 
-                li "list item 9" /li
-                etc.
+            <code> &lt;ol&gt; reversed <br>
+                &lt;li&gt; value=10 "list item 10" &lt;/li&gt; <br> 
+                &lt;li&gt; "list item 9" &lt;/li&gt; <br>
+                etc. <br> 
+                &lt;/ol&gt; 
             </code>
 
     </section>
 
-    <section class="main-section" id="noises">
-        <h1>Doggo Noises</h1>
+    <section class="main-section" id="doggo_noises">
+        <header class="body-header" id="doggo_noises">Doggo Noises</header>
             <p> Besides coming up with words to describe different types 
                 of doggos, the internet has also come up with some words 
                 that help us understand what kind of noise the doggo is 
@@ -254,10 +305,20 @@
                     <li><b>Boof</b> - the snorting, exhaling sound, often made when tracking small animals like squirrels</li>
                 </ul>
             </p>
+
+            <h4 id="coding">Some handy tools to affect text in HTML</h4>
+
+            <code>
+                &lt;b&gt; "" &lt;/b&gt; - <b>bold text</b> <br>
+                &lt;em&gt; "" &lt;/em&gt; - <em>italisize text</em> <br>
+                &lt;u&gt; "" &lt;/u&gt; - <u>underline text</u> <br>
+                &lt;h1-h5&gt; - <h4>create a header</h4> <br>
+                &lt;br&gt; - create a line break (no closing tag needed)
+            </code>
     </section>
 
-    <section class="main-section" id="sizes">
-        <h1>Doggo Sizes</h1>
+    <section class="main-section" id="doggo_sizes">
+        <header class="body-header" id="doggo_sizes">Doggo Sizes</header>
             <p> Not to be missed are the all important adjective words 
                 that we use to affectionately describe doggos. Pictures
                 are provided for reference. 
@@ -289,31 +350,33 @@
             class="doggos">
     </section>
 
-    <section class="main-section" id="other-terms">
-        <h1>Other Doggo Terms</h1>
+    <section class="main-section" id="other_doggo_terms">
+        <header class="body-header" id="other_doggo_terms">Other Doggo Terms</header>
             <p> 
-                <ul>
-                    <li>Boop: "Affectionately poking someone(doggo) on the nose, often accompanied by saying "Boop!"</li>
-                    <li>Snoot: "A nose or other boopable extremety, generally exaggerated to excentuate smolness."</li>
-                    <li>Blop/blep: "When a dog forgets to put its tongue back in its mouth, causing the tip to stick out. Same thing as blep in cats."</li>
-                    <li>Mlem: "(adjective) the sound affect it makes when a tongue exits and re-enters the mouth."</li>
+                <ul id="terms">
+                    <li><b>Boop</b> : "Affectionately poking someone(doggo) on the nose, often accompanied by saying "Boop!"</li>
+                    <li><b>Snoot</b> : "A nose or other boopable extremety, generally exaggerated to excentuate smolness."</li>
+                    <li><b>Blop/blep</b> : "When a dog forgets to put its tongue back in its mouth, causing the tip to stick out. Same thing as blep in cats."</li>
+                    <li><b>Mlem</b> : "(adjective) the sound affect it makes when a tongue exits and re-enters the mouth."</li>
                 </ul>
             </p>
     </section>
 
     <section class="main-section" id="resources">
-        <h1>Resources</h1>
+        <header class="body-header" id="resources">Resources</header>
         <p>
-            https://www.youtube.com/watch?v=rZurdcLO0GU
-            https://www.youtube.com/watch?v=f33VSitUzRE
-            https://en.wikipedia.org/wiki/Doge_(meme)
-            https://www.wired.com/story/rise-of-doggo/
-            https://www.urbandictionary.com/
+            https://www.youtube.com/watch?v=rZurdcLO0GU <br>
+            https://www.youtube.com/watch?v=f33VSitUzRE <br>
+            https://en.wikipedia.org/wiki/Doge_(meme) <br>
+            https://www.wired.com/story/rise-of-doggo/ <br>
+            https://www.urbandictionary.com/ 
 
         </p>
     </section>
 
 
 </main>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
 </html>
