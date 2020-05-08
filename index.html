@@ -6,28 +6,66 @@
    
     <style>
 
+        @font-face {
+          font-family: "Satisfy";
+            src: url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Satisfy&display=swap');
+        }
+
         html {
             font-size: 10px;
+            font-family: 'Satisfy', cursive;
         }
 
         nav {
             position: fixed;
-            min-width: 290px;
+            min-width: 230px;
             top: 0px;
             left: 0px;
-            width: 300px;
+            width: 250px;
             height: 100%;
+            z-index: 1;
             border-right: solid;
-            border-color: whitesmoke;
+            border-color: rgb(0, 0, 0);
 
         }
 
-        body {
-            background-color:rgb(85, 2, 2);
+        #nav-bar {
+            background-color: rgb(129, 39, 39);
+            color: rgb(5, 5, 5);
+        }
+
+        .nav-link {
             color: whitesmoke;
-            font-family: 'Indie Flower', cursive;
-            font-weight: 100;
-            font-size: 1.8rem;
+            text-decoration: none;
+            font-size: 2.3rem;
+            display:block;
+            padding: 20px 10px;
+            text-align: center;
+        }
+
+        nav li {
+            list-style: none;
+        }
+
+        nav li a:hover {
+            background-color: rgb(146, 103, 103);
+        }
+        
+        header {
+            font-size: 2.3rem;
+            display:block;
+            padding: 20px 10px;
+            text-align: center;
+        }
+
+        main {
+            background: url(https://www.psdgraphics.com/wp-content/uploads/2012/07/brown-vintage-wallpaper.jpg);
+            background-repeat:repeat-y;
+            background-size: 1000px 600px;
+            margin-left: 250px;
+            padding-left: 20px;
+            padding-right: 50px;
+            font-size: 2.0rem;
         }
 
         .doggos {
@@ -42,7 +80,7 @@
 </head>
 
 <nav id="nav-bar">
-    <header>HTML with Doggos</header>
+    <header><b>HTML with Doggos</b></header>
 
     <li><a class="nav-link" 
         href="#intro">Introduction</a></li>
