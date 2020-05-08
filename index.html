@@ -130,6 +130,14 @@
                 Here we will learn how to embed an image in HTML.
             </p>
 
+            <code>img src="URL" alt="describe image"</code>
+
+            <p id="coding"> Note that images do not need closing tags. It is important to always have 
+                an alt with a short descriptive phrase to explain the image. This will 
+                help with accessibility for visually impaired users and will be a stand-in 
+                if the image cannot load. 
+            </p>
+
             <figure>
              <img src="https://upload.wikimedia.org/wikipedia/en/5/5f/Original_Doge_meme.jpg" 
              alt="picture of Kabosu the Shiba Inu who inspired the doge meme" >
@@ -142,6 +150,15 @@
                 adventure through the atmosphere. Here we will take a look at inserting
                 this video into our index.html using iframe.  A two minute 
                 version of video will follow.
+            </p>
+
+            <code> iframe src="URL" id="description" height="px value" width="px value" 
+                allowfullscreen /iframe
+            </code>
+
+            <p id="coding">Adding a height and width is not necessary, but may be useful
+                when inserting a video into your webpage. The 'allowfullscreen' is also 
+                a useful tool that should be added before your closing tag.
             </p>
 
             <iframe id="adventure-doge"
@@ -180,6 +197,18 @@
                 </ul>
             </p>   
 
+            <code>ul (unoredered list) 
+                li "list item 1" /li 
+                li "list item 2" /li
+                etc.
+                /ul 
+            </code>
+
+            <p id="coding">It is important to note that each individual list item requires an
+                opening and closing tag to ensure it has its own bullet point and line as well 
+                as the entire unordered list needing opening and closing tags to make it a whole. 
+            </p>
+
             <p> Next we will look at an ordered list of doggo terms that typically 
                 refer to specific breeds of doggos.
             
@@ -190,6 +219,26 @@
                     <li>Puggerino - Pug</li>
                 </ol>
             </p>
+
+            <code>ol (ordered list)
+                li "list item 1" /li 
+                li "list item 2" /li
+                etc.
+                /ol 
+            </code>
+            <p id="coding">An ordered list functions exactly the same as an unordered list
+                with the exception that each list item is numbered. In an ordered list you 
+                can reverse the numbers to count down instead of up by adding "reversed" to the ol tag.
+                You can also add a value = "#" to the first list item to start the count from a number 
+                other than one.
+            </p>
+
+            <code> ol reversed 
+                li value=10 "list item 10" /li 
+                li "list item 9" /li
+                etc.
+            </code>
+
     </section>
 
     <section class="main-section" id="noises">
@@ -199,10 +248,10 @@
                 that help us understand what kind of noise the doggo is 
                 making. The most common of these are:
                 <ul>
-                    <li>Woof - common with lorgebois has a deep timbre</li>
-                    <li>Bork - comes in all sizes, but often the smol doggos are known to bork</li>
-                    <li>Awoo - almost exclusively with huskos but some other howlers too</li>
-                    <li>Boof - the snorting, exhaling sound, often made when tracking small animals like squirrels</li>
+                    <li><b>Woof</b> - common with lorgebois has a deep timbre</li>
+                    <li><b>Bork</b> - comes in all sizes, but often the smol doggos are known to bork</li>
+                    <li><b>Awoo</b> - almost exclusively with huskos but some other howlers too</li>
+                    <li><b>Boof</b> - the snorting, exhaling sound, often made when tracking small animals like squirrels</li>
                 </ul>
             </p>
     </section>
